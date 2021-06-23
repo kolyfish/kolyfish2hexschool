@@ -1,0 +1,379 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+    outline: 1px solid #000;
+}
+.wrap{
+    width: 1025px;
+    margin: 0 auto;
+    background-color: rgb(251, 250, 250);
+    font-family: Microsoft JhengHei;
+}
+.sidHeader{
+    width: 400px;
+}
+.header img{
+    margin: 125px 135px 10px 135px;
+}
+.header li{
+    text-align: center;
+	font-size: 14px;
+	font-weight: 600;
+	line-height:19px;
+	color: #4a4a4a;
+	margin-bottom: 8px;
+}
+.header h1{
+    text-align: center;
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 56px;
+    margin-bottom: 9px;
+}
+.header{
+    height: 400px;
+    display: flex;
+    position: relative;
+    background-image: url(../images/img-headerShape.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.mainHeader{
+	display:flex;
+  
+}
+.mainHeader ul{
+	margin-top: 125px;
+    
+}
+.mainHeader li{
+	font-size: 18px;
+	font-weight: 500px;
+	line-height:24px;
+	margin-bottom: 24px;
+	margin-left: 16px;
+	color: #FFFFFF;
+}
+.about-icon{
+	display:flex;
+    margin-top: 122px;
+	height: 150px;
+	flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.Positioning-icon{
+	width: 34px;
+	height: 42px;
+	background-image:url(../images/Icon-location.png);
+	background-repeat: no-repeat;
+}
+.email-icon{
+	width: 34px;
+	height: 42px;
+	background-image:url(../images/Icon-mail.png);
+	background-repeat: no-repeat;
+}
+.Cat-icon{
+	width: 34px;
+	height: 42px;
+	background-image:url(../images/icon-github.png);
+	background-repeat: no-repeat;
+}
+.c_h2text{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+    line-height:32px;
+    padding-bottom:48px;
+    color:blue;
+}
+
+.course{
+	display:flex;
+	justify-content:space-between;
+	margin: 0 69px;
+}
+
+.Web-box{
+	overflow: hidden;
+	width: 284px;
+	margin-bottom: 56px;
+	background-color: white;
+	border-radius:0px 0px 6px 6px;
+	box-shadow:0px 1px 1px #000;
+	border-bottom: 6px solid #F58D23;
+}
+.JavaScript-box{
+	overflow: hidden;
+	width: 284px;
+	margin-bottom: 56px;
+	background-color: white;
+	border-radius:0px 0px 6px 6px;
+	box-shadow:0px 1px 1px #000;
+	border-bottom: 6px solid #539E43;
+}
+.Dev-box{
+	overflow: hidden;
+	width: 284px;
+	margin-bottom: 56px;
+	background-color: white;
+	border-radius:0px 0px 6px 6px;
+	box-shadow:0px 1px 1px #000;
+	border-bottom: 6px solid #6762A6;
+}
+.box_img{
+	display:flex;
+    justify-content:center;
+    align-items: center;
+	height: 129px;
+}
+.box_text{
+	list-style:disc;
+	padding:0 30px;
+	color: #4A4A4A;
+	padding-bottom: 27px;
+}
+.course h3{
+	font-size: 18px;
+	font-weight: 600;
+	line-height:24px;
+	padding-bottom: 26px;
+	text-align: center;
+}
+.course li{
+	font-size: 9px;
+	font-weight: 900;
+	margin-bottom: 3px;
+}
+
+.main{
+	width: 800px;
+	margin: 50px auto;
+	text-align: center;
+}
+/* head */
+.main::before{
+	content: url(https://i.imgur.com/7KEWdZR.png);
+	display: block;
+  }
+/* head */
+/* bottom */
+.main::after{
+	content: '';
+	width: 40px;
+	height: 3px;
+	background-color: #888;
+	display: block;
+	margin: 0 auto;
+  }
+  /* bottom */
+  /* line */
+.main ul{
+	position: relative;
+	padding: 10px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+.main ul::before{
+	content: '';
+	position: absolute;
+	width: 2px;
+	background-color: #888;
+	height: 100%;
+	top: 0;
+  }
+  /* line */
+  /* content */
+.main .article{
+	border: 2px solid #fb56bf;
+	text-align: left;
+	border-radius: 5px;
+	padding: 15px;
+	width: 200px;
+	margin: 0 20px;
+  }
+.main .even-article{
+	border: 2px solid #fb56bf;
+	text-align: right;
+	border-radius: 5px;
+	padding: 15px;
+	width: 200px;
+	margin: 0 20px;
+}
+.main li:nth-child(even){
+	align-self: flex-start;
+	flex-direction: row-reverse;
+  }
+.main li:nth-child(odd){
+	align-self: flex-end;
+  }
+  /* content */
+  /* icon */
+.main li{
+	display: flex;
+	width: 50%;
+	margin: 10px 0;
+	position: relative;
+  }
+.main li::before{
+	content: url(https://i.imgur.com/BPXlmNk.png);
+	position: absolute;
+  }
+.main li:nth-child(even)::before{
+	right: -12px;
+  }
+.main li:nth-child(odd)::before{
+	left: -12px;
+  }
+  /* icon */
+.c_h4text{
+	text-align: center;
+	font-size: 24px;
+	font-weight: 900;
+	line-height:32px;
+	color: #FB56BF;
+	margin-bottom: 46px;
+}
+.works{
+	text-align: center;
+	margin:0 70px;
+	margin-bottom: 60px;
+}
+.works ul{
+	display: flex;
+	justify-content:space-between;
+	text-align:left;
+}
+.works li{
+	width: 280px;
+	box-shadow:0px 2px 3px rgba(0, 0, 0, 0.193);
+	border-radius:4px;
+}
+.img_pink{
+	height: 150px;
+	display: flex;
+	justify-content:flex-end;
+    align-items: flex-end;
+	background: pink;
+}
+.img_gray{
+	height: 150px;
+	display: flex;
+	justify-content:center;
+    align-items:center;
+	background: #424242;
+}
+.img_lightblue{
+	height: 150px;
+	display: flex;
+	justify-content:center;
+    align-items:center;
+	background: #8AD7FA ;
+}
+.works a{
+	font-size: 14px;
+	font-weight: 900;
+	line-height:2;
+	text-decoration:none;
+	color: #000;
+}
+.works a:hover{
+	color: #FB56BF;
+}
+.works p{
+	font-size: 14px;
+	font-weight: 700;
+	line-height:1.5;
+	margin-bottom: 16px;
+	color: #424242;
+}
+.thumb{
+	position: relative;
+	width: 50px;
+	height: 50px;
+	background-size: 46px 50px;
+	background-image: url(/images/thumb1.png);
+	background-repeat: no-repeat;
+	z-index:1;
+	top: -70px;
+	right:-900px;
+}
+.autobiography{
+	width: 746px;
+	margin: 0 auto;
+	display:flex;
+    justify-content:space-between;
+    align-items: center;
+	padding-bottom: 74px;
+}
+.autobiography img{
+	width: 260px;
+}
+.autobiography_text{
+	width: 442px;
+	font-size: 14px;
+	padding-left: 8px;
+	font-weight: 800;
+	line-height:26px;
+	color: #4A4A4A;
+}
+.footer{
+	margin: 0 auto;
+	height: 87px;
+	font-size: 16px;
+	font-weight: 900;
+	line-height:26px;
+	background-image: url(/images/img-Looper-bg.png);
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
